@@ -40,8 +40,12 @@ The simplest option was to configure an [basic IPoE router](https://www.buffalo.
 
 The LAN side of the gateway now provides 1 local IPv4 address and passes through all IPv6 addresses.
 
-## Main and Guest LAN
-At the core of the main LAN is an [ASUS RT-AX86U](https://www.asus.com/Networking-IoT-Servers/WiFi-Routers/ASUS-Gaming-Routers/RT-AX86U/) running the [Asuswrt-Merlin](https://www.asuswrt-merlin.net/) custom firmware.
+## LANs
+3 LANs provide security and enable application of systematic policies.
 
-![Topology](https://user-images.githubusercontent.com/89047/139588307-f08f3531-6a3e-4cbd-94ec-1e3f724d32cd.png)  
+The primary LAN hosts trusted devices like NAS, laptops, and mobile. A few trusted IoT devices like Nvidia Shield and Nest Home are also on this LAN as they require access to the NAS and multicast from trusted devices.
+
+![LANs](https://user-images.githubusercontent.com/89047/139636248-c48a94fb-c9f2-4401-bef9-8bfdcd192a90.png)  
 <sub>*Topology*</sub>
+
+At the core of the main LAN is an [ASUS RT-AX86U](https://www.asus.com/Networking-IoT-Servers/WiFi-Routers/ASUS-Gaming-Routers/RT-AX86U/) running the [Asuswrt-Merlin](https://www.asuswrt-merlin.net/) custom firmware.
